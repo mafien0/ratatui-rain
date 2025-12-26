@@ -7,7 +7,7 @@ use rand_pcg::Pcg64Mcg;
 use ratatui::{
     buffer::Buffer,
     layout::Rect,
-    style::{Color, Style, Stylize},
+    style::{Color, Style},
     widgets::Widget,
 };
 
