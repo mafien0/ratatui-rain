@@ -324,6 +324,6 @@ ratatui-rain is distributed under [The MIT License](./LICENSE.txt).
 [crates-io-badge]: https://img.shields.io/crates/v/ratatui-rain.svg
 [crate]: https://crates.io/crates/ratatui-rain
 [doc-badge]: https://docs.rs/ratatui-rain/badge.svg
-[doc]: https://docs.rs/ratatui-rain/latest/ratatui-rain/
+[doc]: https://docs.rs/ratatui-rain/latest/ratatui_rain/
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: https://github.com/mafien0/ratatui-rain/blob/main/LICENSE
