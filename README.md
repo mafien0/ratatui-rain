@@ -4,6 +4,8 @@
 [![docs][doc-badge]][doc]
 [![license][license-badge]][license]
 
+[![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
+
 ratatui-rain is a simple widget to generate various rain effects for ratatui.
 
 <img src="https://github.com/user-attachments/assets/3fe50f0f-6c01-4864-96ff-58510fd7feb5" width=475 height=270 alt="matrix rain effect">
