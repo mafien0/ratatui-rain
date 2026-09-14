@@ -4,7 +4,7 @@ use crossterm::event::{Event, EventStream, KeyCode};
 use futures::{FutureExt, StreamExt};
 use ratatui::{style::Stylize, DefaultTerminal, Frame};
 use tokio::time;
-use tui_rain::Rain;
+use ratatui_rain::Rain;
 
 /// How much to smooth the FPS tracking.
 ///

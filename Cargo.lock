@@ -1099,6 +1099,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "ratatui-rain"
+version = "1.0.2"
+dependencies = [
+ "crossterm 0.28.1",
+ "futures",
+ "rand",
+ "rand_pcg",
+ "ratatui",
+ "tokio",
+]
+
+[[package]]
 name = "ratatui-termina"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1565,18 +1577,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 3.0.5",
-]
-
-[[package]]
-name = "tui-rain"
-version = "1.0.1"
-dependencies = [
- "crossterm 0.28.1",
- "futures",
- "rand",
- "rand_pcg",
- "ratatui",
- "tokio",
 ]
 
 [[package]]

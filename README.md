@@ -1,10 +1,10 @@
-# tui-rain
+# ratatui-rain
 
 [![crate][crates-io-badge]][crate]
 [![docs][doc-badge]][doc]
 [![license][license-badge]][license]
 
-tui-rain is a simple widget to generate various rain effects for ratatui.
+ratatui-rain is a simple widget to generate various rain effects for ratatui.
 
 <img src="https://github.com/user-attachments/assets/3fe50f0f-6c01-4864-96ff-58510fd7feb5" width=475 height=270 alt="matrix rain effect">
 
@@ -69,7 +69,7 @@ A demonstration of fairly minimal code to render all variants of this widget. Do
 
 The `Rain` struct is a simple stateless ratatui widget. It can be initially constructed from a few helper functions with defaults, and further configured from there.
 
-Construction requires only an `elapsed` duration to determine what frame to render. This can be provided by just tracking the time the animation was started, and computing `start_time.elapsed()` at render-time. See [simple.rs](https://github.com/Levilutz/tui-rain/blob/main/examples/simple.rs) for a minimal example.
+Construction requires only an `elapsed` duration to determine what frame to render. This can be provided by just tracking the time the animation was started, and computing `start_time.elapsed()` at render-time. See [simple.rs](https://github.com/mafien0/ratatui-rain/blob/main/examples/simple.rs) for a minimal example.
 
 Construction functions:
 
@@ -84,7 +84,7 @@ There are a variety of configuration options available, and they can be sequenti
 
 ```rust
 use std::time::Duration;
-use tui_rain::{CharacterSet, Rain, RainDensity, RainSpeed};
+use ratatui_rain::{CharacterSet, Rain, RainDensity, RainSpeed};
 
 let elapsed = Duration::from_secs(5);
 
@@ -112,7 +112,7 @@ The simplest option is to provide an explicit set of characters to choose from:
 
 ```rust
 use std::time::Duration;
-use tui_rain::{CharacterSet, Rain};
+use ratatui_rain::{CharacterSet, Rain};
 
 let elapsed = Duration::from_secs(5);
 
@@ -126,7 +126,7 @@ More performant is to provide a unicode range:
 
 ```rust
 use std::time::Duration;
-use tui_rain::{CharacterSet, Rain};
+use ratatui_rain::{CharacterSet, Rain};
 
 let elapsed = Duration::from_secs(5);
 
@@ -148,7 +148,7 @@ This can be configured as an absolute number of drops:
 
 ```rust
 use std::time::Duration;
-use tui_rain::{Rain, RainDensity};
+use ratatui_rain::{Rain, RainDensity};
 
 let elapsed = Duration::from_secs(5);
 
@@ -162,7 +162,7 @@ Or a ratio of screen pixels to drops (lower is more dense):
 
 ```rust
 use std::time::Duration;
-use tui_rain::{Rain, RainDensity};
+use ratatui_rain::{Rain, RainDensity};
 
 let elapsed = Duration::from_secs(5);
 
@@ -188,7 +188,7 @@ For an absolute speed in pixels per second:
 
 ```rust
 use std::time::Duration;
-use tui_rain::{Rain, RainSpeed};
+use ratatui_rain::{Rain, RainSpeed};
 
 let elapsed = Duration::from_secs(5);
 
@@ -212,7 +212,7 @@ For example, a value of `0.1` will cause each drop's speed to be uniformly distr
 
 ```rust
 use std::time::Duration;
-use tui_rain::Rain;
+use ratatui_rain::Rain;
 
 let elapsed = Duration::from_secs(5);
 
@@ -228,7 +228,7 @@ You can make the rain drop tails appear shorter / longer by configuring how long
 
 ```rust
 use std::time::Duration;
-use tui_rain::Rain;
+use ratatui_rain::Rain;
 
 let elapsed = Duration::from_secs(5);
 
@@ -244,7 +244,7 @@ You can change the tail color for each drop:
 
 ```rust
 use std::time::Duration;
-use tui_rain::Rain;
+use ratatui_rain::Rain;
 
 let elapsed = Duration::from_secs(5);
 
@@ -260,7 +260,7 @@ You can change the head color for each drop:
 
 ```rust
 use std::time::Duration;
-use tui_rain::Rain;
+use ratatui_rain::Rain;
 
 let elapsed = Duration::from_secs(5);
 
@@ -278,7 +278,7 @@ This may tweak the color of glyphs away from the base color on some terminals, s
 
 ```rust
 use std::time::Duration;
-use tui_rain::Rain;
+use ratatui_rain::Rain;
 
 let elapsed = Duration::from_secs(5);
 
@@ -292,7 +292,7 @@ A more subtle effect is that glyphs already rendered in a drop occasionally swit
 
 ```rust
 use std::time::Duration;
-use tui_rain::Rain;
+use ratatui_rain::Rain;
 
 let elapsed = Duration::from_secs(5);
 
@@ -306,7 +306,7 @@ The random seed can be configured. Given a constant screen size, results should 
 
 ```rust
 use std::time::Duration;
-use tui_rain::Rain;
+use ratatui_rain::Rain;
 
 let elapsed = Duration::from_secs(5);
 
@@ -314,13 +314,16 @@ Rain::new_matrix(elapsed)
     .with_seed(1234);
 ```
 
+## Thanks to
+thanks to [Levilutz](https://github.com/Levilutz) for originally creating [tui-rain](https://github.com/Levilutz/tui-rain)
+
 ## License
 
-tui-rain is distributed under [The MIT License](./LICENSE.txt).
+ratatui-rain is distributed under [The MIT License](./LICENSE.txt).
 
-[crates-io-badge]: https://img.shields.io/crates/v/tui-rain.svg
-[crate]: https://crates.io/crates/tui-rain
-[doc-badge]: https://docs.rs/tui-rain/badge.svg
-[doc]: https://docs.rs/tui-rain/latest/tui_rain/
+[crates-io-badge]: https://img.shields.io/crates/v/ratatui-rain.svg
+[crate]: https://crates.io/crates/ratatui-rain
+[doc-badge]: https://docs.rs/ratatui-rain/badge.svg
+[doc]: https://docs.rs/ratatui-rain/latest/ratatui-rain/
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[license]: https://github.com/Levilutz/tui-rain/blob/main/LICENSE
+[license]: https://github.com/mafien0/ratatui-rain/blob/main/LICENSE

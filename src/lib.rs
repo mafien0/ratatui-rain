@@ -228,7 +228,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::Rain;
+    /// use ratatui_rain::Rain;
     ///
     /// let elapsed = Duration::from_secs(5);
     ///
@@ -246,7 +246,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::{Rain, RainDensity};
+    /// use ratatui_rain::{Rain, RainDensity};
     ///
     /// Rain::new_matrix(Duration::from_secs(0))
     ///     .with_rain_density(RainDensity::Absolute {
@@ -257,7 +257,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::{Rain, RainDensity};
+    /// use ratatui_rain::{Rain, RainDensity};
     ///
     /// Rain::new_matrix(Duration::from_secs(0))
     ///     .with_rain_density(RainDensity::Relative {
@@ -287,7 +287,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::{Rain, RainSpeed};
+    /// use ratatui_rain::{Rain, RainSpeed};
     ///
     /// let elapsed = Duration::from_secs(5);
     ///
@@ -317,7 +317,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::Rain;
+    /// use ratatui_rain::Rain;
     ///
     /// let elapsed = Duration::from_secs(5);
     ///
@@ -339,7 +339,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::Rain;
+    /// use ratatui_rain::Rain;
     ///
     /// let elapsed = Duration::from_secs(5);
     ///
@@ -360,7 +360,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::Rain;
+    /// use ratatui_rain::Rain;
     ///
     /// let elapsed = Duration::from_secs(5);
     ///
@@ -382,7 +382,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::Rain;
+    /// use ratatui_rain::Rain;
     ///
     /// let elapsed = Duration::from_secs(5);
     ///
@@ -409,7 +409,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::Rain;
+    /// use ratatui_rain::Rain;
     ///
     /// let elapsed = Duration::from_secs(5);
     ///
@@ -429,7 +429,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::Rain;
+    /// use ratatui_rain::Rain;
     ///
     /// let elapsed = Duration::from_secs(5);
     ///
@@ -447,7 +447,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::{CharacterSet, Rain};
+    /// use ratatui_rain::{CharacterSet, Rain};
     ///
     /// let elapsed = Duration::from_secs(5);
     ///
@@ -461,7 +461,7 @@ impl Rain {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use tui_rain::{CharacterSet, Rain};
+    /// use ratatui_rain::{CharacterSet, Rain};
     ///
     /// let elapsed = Duration::from_secs(5);
     ///

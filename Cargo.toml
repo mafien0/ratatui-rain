@@ -1,13 +1,13 @@
 [package]
-name = "tui-rain"
-version = "1.0.1"
+name = "ratatui-rain"
+version = "1.0.2"
 edition = "2021"
 license = "MIT"
-description = "tui-rain is a simple widget to generate various rain effects for ratatui"
-homepage = "https://github.com/levilutz/tui-rain"
-repository = "https://github.com/levilutz/tui-rain"
+description = "Roughly maintained fork of tui-rain"
+homepage = "https://github.com/mafien0/ratatui-rain"
+repository = "https://github.com/mafien0/ratatui-rain"
 readme = "README.md"
-keywords = ["tui", "ratatui"]
+keywords = ["tui", "ratatui", "rain"]
 
 [dependencies]
 rand = { version = "0.8.5", default-features = false }
