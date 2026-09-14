@@ -3,8 +3,8 @@ use std::error::Error;
 use crossterm::event::{Event, EventStream, KeyCode};
 use futures::{FutureExt, StreamExt};
 use ratatui::{style::Stylize, DefaultTerminal, Frame};
-use tokio::time;
 use ratatui_rain::Rain;
+use tokio::time;
 
 /// How much to smooth the FPS tracking.
 ///

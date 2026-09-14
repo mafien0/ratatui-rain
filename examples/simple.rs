@@ -1,6 +1,6 @@
 use ratatui::Frame;
-use tokio::time;
 use ratatui_rain::Rain;
+use tokio::time;
 
 #[tokio::main]
 async fn main() {
