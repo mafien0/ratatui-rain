@@ -2,7 +2,7 @@
 
 use std::{cmp::Ordering, time::Duration};
 
-use rand::{RngCore, SeedableRng};
+use rand::{Rng, SeedableRng};
 use rand_pcg::Pcg64Mcg;
 use ratatui::{
     buffer::Buffer,
@@ -483,7 +483,7 @@ impl Rain {
     }
 
     /// Build the rng. Uses a fast but portable and reproducible rng.
-    fn build_rng(&self) -> impl RngCore {
+    fn build_rng(&self) -> impl Rng {
         Pcg64Mcg::seed_from_u64(self.seed)
     }
 
