@@ -61,6 +61,10 @@ cargo run --example emoji
 
 A demonstration of fairly minimal code to render this widget. Does not listen for key events, and will automatically exit after ~10 seconds.
 
+### Multi
+
+A demonstration of fairly minimal code to render all variants of this widget. Does not listen for key events, and will automatically exit after ~10 seconds.
+
 ## Usage
 
 The `Rain` struct is a simple stateless ratatui widget. It can be initially constructed from a few helper functions with defaults, and further configured from there.

@@ -644,8 +644,10 @@ impl Widget for Rain {
 
         // Actually render to the buffer.
         for glyph in glyphs {
-            buf[(glyph.x, glyph.y)].set_char(glyph.content);
-            buf[(glyph.x, glyph.y)].set_style(glyph.style);
+            if let (Some(x), Some(y)) = (glyph.x.checked_add(area.x), glyph.y.checked_add(area.y)) {
+                buf[(x, y)].set_char(glyph.content);
+                buf[(x, y)].set_style(glyph.style);
+            }
         }
     }
 }
